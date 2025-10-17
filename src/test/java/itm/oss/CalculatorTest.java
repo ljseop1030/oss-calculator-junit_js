@@ -49,7 +49,7 @@ class CalculatorTest {
     @Test
     void testToFail() {
         // 10은 소수가 아닌데, 소수(true)라고 주장하여 일부러 실패하게 만듦
-        assertTrue(calc.isPrime(10), "10 is not prime");
+        assertFalse(calc.isPrime(10), "10 is not prime");
     }
 
 }
